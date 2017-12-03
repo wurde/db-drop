@@ -25,7 +25,10 @@
     "db",
     "task"
   ],
-  "os": ["darwin", "linux"],
+  "os": [
+    "darwin",
+    "linux"
+  ],
   "engines": {
     "node": ">= 8"
   },
@@ -34,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/wurde/db-drop/issues"
   },
-  "homepage": "https://github.com/wurde/db-drop#readme"
+  "homepage": "https://github.com/wurde/db-drop#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
 }
