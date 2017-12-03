@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/wurde/db-drop.git"
   },
+  "bin": {
+    "db_drop": "./index.js"
+  },
   "keywords": [
     "db",
     "task"
