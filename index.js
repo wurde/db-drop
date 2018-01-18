@@ -32,6 +32,7 @@ if (!fs.existsSync(package_json_path)) {
   main_script = index_js_path
 } else {
   let config = JSON.parse(fs.readFileSync(package_json_path))
+
   if (config.main === undefined || config.main === '') {
     main_script = index_js_path
   } else {
