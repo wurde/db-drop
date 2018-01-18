@@ -68,6 +68,12 @@ if (fs.existsSync(main_script)) {
    */
 
   child_process.spawn('dropdb', [pg_database])
+
+  /**
+   * Close db pool
+   */
+
+  db.end()
 } else {
   throw Error("Missing 'main' in package.json and missing an index.js file.")
 }
