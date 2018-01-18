@@ -12,6 +12,13 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+## 2018-01-18, Version 1.2.0
+
+* 2 minor enhancements:
+
+  * Add --if-exists flag
+  * Make method spawnSync
+
 ## 2018-01-18, Version 1.1.0
 
 * 1 minor enhancement:
