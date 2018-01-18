@@ -12,6 +12,12 @@ Changes are categorized as follows:
 
 ## [Unreleased]
 
+## 2018-01-18, Version 1.1.0
+
+* 1 minor enhancement:
+
+  * Close db connection
+
 ## 2017-12-03, Version 1.0.0
 
 * 1 major enhancement:
