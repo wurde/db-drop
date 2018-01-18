@@ -67,7 +67,7 @@ if (fs.existsSync(main_script)) {
    * Create database
    */
 
-  child_process.spawn('dropdb', [pg_database])
+  child_process.spawn('dropdb', ['--if-exists', pg_database])
 
   /**
    * Close db pool
