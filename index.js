@@ -23,13 +23,12 @@ const index_js_path = path.join(base, 'index.js')
  */
 
 let main_script
-let has_config = fs.existsSync(package_json_path)
 
 /**
  * Set the main script to load
  */
 
-if (has_config == false) {
+if (!fs.existsSync(package_json_path)) {
   main_script = index_js_path
 } else {
   let config = JSON.parse(fs.readFileSync(package_json_path))
@@ -44,9 +43,7 @@ if (has_config == false) {
  * Load the main script
  */
 
-let has_main_script = fs.existsSync(main_script)
-
-if (has_main_script) {
+if (fs.existsSync(main_script)) {
   const app = require(main_script)
 
   /**
